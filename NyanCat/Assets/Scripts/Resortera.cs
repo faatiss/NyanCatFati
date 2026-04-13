@@ -5,7 +5,7 @@ public class Resortera : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 posInicial;
     private LineRenderer linea;
-
+    private Controles InputActions
     public float fuerza = 5f;
 
     void Start()
@@ -22,6 +22,11 @@ public class Resortera : MonoBehaviour
         linea.material = new Material(Shader.Find("Sprites/Default"));
         linea.SetPosition(0, posInicial);
         linea.SetPosition(1, posInicial);
+    }
+
+    private void Awake()
+    {
+        InputActions = new Controles();
     }
 
     void OnMouseDown()
