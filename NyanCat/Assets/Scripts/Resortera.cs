@@ -1,11 +1,12 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Resortera : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Vector2 posInicial;
     private LineRenderer linea;
-    private Controles InputActions
+    private Controles inputactions;
     public float fuerza = 5f;
 
     void Start()
@@ -26,7 +27,28 @@ public class Resortera : MonoBehaviour
 
     private void Awake()
     {
-        InputActions = new Controles();
+        inputactions = new Controles();
+    }
+
+    private void OnEnable()
+    {
+        inputactions.pajarosycerdos.Enable();
+        inputactions.pajarosycerdos.Presionado.started += LePico;
+        inputactions.pajarosycerdos.Posicion.ReadValue<Vector2>();
+
+
+        inputactions.pajarosycerdos.izquierdo += DejoDePicar;
+        inputactions.pajarosycerdos.barra.ReadValue<Vector2>();
+
+    }
+
+void LePico (InputAction.CallbackContext handler)
+    {
+        print("Le picó al clic de la izquierda");
+    }
+ void DejoDePicar (InputAction.CallbackContext handler)
+    {
+        print("Le dejó de picar al clic de la izquierda");
     }
 
     void OnMouseDown()

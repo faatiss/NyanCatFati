@@ -89,7 +89,7 @@ public partial class @Controles: IInputActionCollection2, IDisposable
     ""name"": ""Controles"",
     ""maps"": [
         {
-            ""name"": ""Pajaros y cerdos"",
+            ""name"": ""pajarosycerdos"",
             ""id"": ""575f5acf-81e1-4904-bcf6-46779172511e"",
             ""actions"": [
                 {
@@ -102,9 +102,27 @@ public partial class @Controles: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Posición"",
+                    ""name"": ""Posicion"",
                     ""type"": ""Button"",
                     ""id"": ""1a25cf8d-a8ab-4349-a1d8-f094c6d0b5fc"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""izquierdo"",
+                    ""type"": ""Button"",
+                    ""id"": ""453b880f-a9d9-4145-8bdf-155bccb37e5b"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""barra"",
+                    ""type"": ""Button"",
+                    ""id"": ""74a90415-fba8-42c6-96f6-1c36e0711b58"",
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
@@ -130,7 +148,7 @@ public partial class @Controles: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Posición"",
+                    ""action"": ""Posicion"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -141,7 +159,29 @@ public partial class @Controles: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Posición"",
+                    ""action"": ""Posicion"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ad1ca292-21e1-4c6f-94bb-d2ae54f80a76"",
+                    ""path"": ""<Mouse>/backButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""izquierdo"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0d064a0a-3bfe-4320-9ba8-e0f66198984c"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""barra"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -150,15 +190,17 @@ public partial class @Controles: IInputActionCollection2, IDisposable
     ],
     ""controlSchemes"": []
 }");
-        // Pajaros y cerdos
-        m_Pajarosycerdos = asset.FindActionMap("Pajaros y cerdos", throwIfNotFound: true);
-        m_Pajarosycerdos_Presionado = m_Pajarosycerdos.FindAction("Presionado", throwIfNotFound: true);
-        m_Pajarosycerdos_Posición = m_Pajarosycerdos.FindAction("Posición", throwIfNotFound: true);
+        // pajarosycerdos
+        m_pajarosycerdos = asset.FindActionMap("pajarosycerdos", throwIfNotFound: true);
+        m_pajarosycerdos_Presionado = m_pajarosycerdos.FindAction("Presionado", throwIfNotFound: true);
+        m_pajarosycerdos_Posicion = m_pajarosycerdos.FindAction("Posicion", throwIfNotFound: true);
+        m_pajarosycerdos_izquierdo = m_pajarosycerdos.FindAction("izquierdo", throwIfNotFound: true);
+        m_pajarosycerdos_barra = m_pajarosycerdos.FindAction("barra", throwIfNotFound: true);
     }
 
     ~@Controles()
     {
-        UnityEngine.Debug.Assert(!m_Pajarosycerdos.enabled, "This will cause a leak and performance issues, Controles.Pajarosycerdos.Disable() has not been called.");
+        UnityEngine.Debug.Assert(!m_pajarosycerdos.enabled, "This will cause a leak and performance issues, Controles.pajarosycerdos.Disable() has not been called.");
     }
 
     /// <summary>
@@ -231,13 +273,15 @@ public partial class @Controles: IInputActionCollection2, IDisposable
         return asset.FindBinding(bindingMask, out action);
     }
 
-    // Pajaros y cerdos
-    private readonly InputActionMap m_Pajarosycerdos;
+    // pajarosycerdos
+    private readonly InputActionMap m_pajarosycerdos;
     private List<IPajarosycerdosActions> m_PajarosycerdosActionsCallbackInterfaces = new List<IPajarosycerdosActions>();
-    private readonly InputAction m_Pajarosycerdos_Presionado;
-    private readonly InputAction m_Pajarosycerdos_Posición;
+    private readonly InputAction m_pajarosycerdos_Presionado;
+    private readonly InputAction m_pajarosycerdos_Posicion;
+    private readonly InputAction m_pajarosycerdos_izquierdo;
+    private readonly InputAction m_pajarosycerdos_barra;
     /// <summary>
-    /// Provides access to input actions defined in input action map "Pajaros y cerdos".
+    /// Provides access to input actions defined in input action map "pajarosycerdos".
     /// </summary>
     public struct PajarosycerdosActions
     {
@@ -248,17 +292,25 @@ public partial class @Controles: IInputActionCollection2, IDisposable
         /// </summary>
         public PajarosycerdosActions(@Controles wrapper) { m_Wrapper = wrapper; }
         /// <summary>
-        /// Provides access to the underlying input action "Pajarosycerdos/Presionado".
+        /// Provides access to the underlying input action "pajarosycerdos/Presionado".
         /// </summary>
-        public InputAction @Presionado => m_Wrapper.m_Pajarosycerdos_Presionado;
+        public InputAction @Presionado => m_Wrapper.m_pajarosycerdos_Presionado;
         /// <summary>
-        /// Provides access to the underlying input action "Pajarosycerdos/Posición".
+        /// Provides access to the underlying input action "pajarosycerdos/Posicion".
         /// </summary>
-        public InputAction @Posición => m_Wrapper.m_Pajarosycerdos_Posición;
+        public InputAction @Posicion => m_Wrapper.m_pajarosycerdos_Posicion;
+        /// <summary>
+        /// Provides access to the underlying input action "pajarosycerdos/izquierdo".
+        /// </summary>
+        public InputAction @izquierdo => m_Wrapper.m_pajarosycerdos_izquierdo;
+        /// <summary>
+        /// Provides access to the underlying input action "pajarosycerdos/barra".
+        /// </summary>
+        public InputAction @barra => m_Wrapper.m_pajarosycerdos_barra;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
-        public InputActionMap Get() { return m_Wrapper.m_Pajarosycerdos; }
+        public InputActionMap Get() { return m_Wrapper.m_pajarosycerdos; }
         /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Enable()" />
         public void Enable() { Get().Enable(); }
         /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Disable()" />
@@ -284,9 +336,15 @@ public partial class @Controles: IInputActionCollection2, IDisposable
             @Presionado.started += instance.OnPresionado;
             @Presionado.performed += instance.OnPresionado;
             @Presionado.canceled += instance.OnPresionado;
-            @Posición.started += instance.OnPosición;
-            @Posición.performed += instance.OnPosición;
-            @Posición.canceled += instance.OnPosición;
+            @Posicion.started += instance.OnPosicion;
+            @Posicion.performed += instance.OnPosicion;
+            @Posicion.canceled += instance.OnPosicion;
+            @izquierdo.started += instance.OnIzquierdo;
+            @izquierdo.performed += instance.OnIzquierdo;
+            @izquierdo.canceled += instance.OnIzquierdo;
+            @barra.started += instance.OnBarra;
+            @barra.performed += instance.OnBarra;
+            @barra.canceled += instance.OnBarra;
         }
 
         /// <summary>
@@ -301,9 +359,15 @@ public partial class @Controles: IInputActionCollection2, IDisposable
             @Presionado.started -= instance.OnPresionado;
             @Presionado.performed -= instance.OnPresionado;
             @Presionado.canceled -= instance.OnPresionado;
-            @Posición.started -= instance.OnPosición;
-            @Posición.performed -= instance.OnPosición;
-            @Posición.canceled -= instance.OnPosición;
+            @Posicion.started -= instance.OnPosicion;
+            @Posicion.performed -= instance.OnPosicion;
+            @Posicion.canceled -= instance.OnPosicion;
+            @izquierdo.started -= instance.OnIzquierdo;
+            @izquierdo.performed -= instance.OnIzquierdo;
+            @izquierdo.canceled -= instance.OnIzquierdo;
+            @barra.started -= instance.OnBarra;
+            @barra.performed -= instance.OnBarra;
+            @barra.canceled -= instance.OnBarra;
         }
 
         /// <summary>
@@ -336,9 +400,9 @@ public partial class @Controles: IInputActionCollection2, IDisposable
     /// <summary>
     /// Provides a new <see cref="PajarosycerdosActions" /> instance referencing this action map.
     /// </summary>
-    public PajarosycerdosActions @Pajarosycerdos => new PajarosycerdosActions(this);
+    public PajarosycerdosActions @pajarosycerdos => new PajarosycerdosActions(this);
     /// <summary>
-    /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "Pajaros y cerdos" which allows adding and removing callbacks.
+    /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "pajarosycerdos" which allows adding and removing callbacks.
     /// </summary>
     /// <seealso cref="PajarosycerdosActions.AddCallbacks(IPajarosycerdosActions)" />
     /// <seealso cref="PajarosycerdosActions.RemoveCallbacks(IPajarosycerdosActions)" />
@@ -352,11 +416,25 @@ public partial class @Controles: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnPresionado(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "Posición" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "Posicion" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnPosición(InputAction.CallbackContext context);
+        void OnPosicion(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "izquierdo" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnIzquierdo(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "barra" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnBarra(InputAction.CallbackContext context);
     }
 }
