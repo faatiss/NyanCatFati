@@ -12,7 +12,7 @@ public class Resortera : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.gravityScale = 0; // Evita que caiga al inicio
+        rb.gravityScale = 0;
         posInicial = transform.position;
 
         GameObject lineaObj = new GameObject("LineaResortera");
@@ -32,13 +32,13 @@ public class Resortera : MonoBehaviour
 
     private void OnEnable()
     {
-        inputactions.pajarosycerdos.Enable();
-        inputactions.pajarosycerdos.Presionado.started += LePico;
-        inputactions.pajarosycerdos.Posicion.ReadValue<Vector2>();
+        inputactions.PajarosVScerdos.Enable();
+        inputactions.PajarosVScerdos.Presionado.started += LePico;
+        inputactions.PajarosVScerdos.Posicion.ReadValue<Vector2>();
 
 
-        inputactions.pajarosycerdos.izquierdo += DejoDePicar;
-        inputactions.pajarosycerdos.barra.ReadValue<Vector2>();
+       // inputactions.PajarosVScerdos.izquierdo += DejoDePicar;
+        inputactions.PajarosVScerdos.barra.ReadValue<Vector2>();
 
     }
 
@@ -87,7 +87,7 @@ void LePico (InputAction.CallbackContext handler)
         Resortera resorteraNueva = nuevaPelota.GetComponent<Resortera>();
         resorteraNueva.CancelInvoke("RecrearPelota");
 
-        Destroy(linea.gameObject); // destruimos solo la línea del objeto original
-        Destroy(gameObject);       // destruimos la pelota original
+        Destroy(linea.gameObject); 
+        Destroy(gameObject);       
     }
 }

@@ -89,7 +89,7 @@ public partial class @Controles: IInputActionCollection2, IDisposable
     ""name"": ""Controles"",
     ""maps"": [
         {
-            ""name"": ""pajarosycerdos"",
+            ""name"": ""PajarosVScerdos"",
             ""id"": ""575f5acf-81e1-4904-bcf6-46779172511e"",
             ""actions"": [
                 {
@@ -190,17 +190,17 @@ public partial class @Controles: IInputActionCollection2, IDisposable
     ],
     ""controlSchemes"": []
 }");
-        // pajarosycerdos
-        m_pajarosycerdos = asset.FindActionMap("pajarosycerdos", throwIfNotFound: true);
-        m_pajarosycerdos_Presionado = m_pajarosycerdos.FindAction("Presionado", throwIfNotFound: true);
-        m_pajarosycerdos_Posicion = m_pajarosycerdos.FindAction("Posicion", throwIfNotFound: true);
-        m_pajarosycerdos_izquierdo = m_pajarosycerdos.FindAction("izquierdo", throwIfNotFound: true);
-        m_pajarosycerdos_barra = m_pajarosycerdos.FindAction("barra", throwIfNotFound: true);
+        // PajarosVScerdos
+        m_PajarosVScerdos = asset.FindActionMap("PajarosVScerdos", throwIfNotFound: true);
+        m_PajarosVScerdos_Presionado = m_PajarosVScerdos.FindAction("Presionado", throwIfNotFound: true);
+        m_PajarosVScerdos_Posicion = m_PajarosVScerdos.FindAction("Posicion", throwIfNotFound: true);
+        m_PajarosVScerdos_izquierdo = m_PajarosVScerdos.FindAction("izquierdo", throwIfNotFound: true);
+        m_PajarosVScerdos_barra = m_PajarosVScerdos.FindAction("barra", throwIfNotFound: true);
     }
 
     ~@Controles()
     {
-        UnityEngine.Debug.Assert(!m_pajarosycerdos.enabled, "This will cause a leak and performance issues, Controles.pajarosycerdos.Disable() has not been called.");
+        UnityEngine.Debug.Assert(!m_PajarosVScerdos.enabled, "This will cause a leak and performance issues, Controles.PajarosVScerdos.Disable() has not been called.");
     }
 
     /// <summary>
@@ -273,44 +273,44 @@ public partial class @Controles: IInputActionCollection2, IDisposable
         return asset.FindBinding(bindingMask, out action);
     }
 
-    // pajarosycerdos
-    private readonly InputActionMap m_pajarosycerdos;
-    private List<IPajarosycerdosActions> m_PajarosycerdosActionsCallbackInterfaces = new List<IPajarosycerdosActions>();
-    private readonly InputAction m_pajarosycerdos_Presionado;
-    private readonly InputAction m_pajarosycerdos_Posicion;
-    private readonly InputAction m_pajarosycerdos_izquierdo;
-    private readonly InputAction m_pajarosycerdos_barra;
+    // PajarosVScerdos
+    private readonly InputActionMap m_PajarosVScerdos;
+    private List<IPajarosVScerdosActions> m_PajarosVScerdosActionsCallbackInterfaces = new List<IPajarosVScerdosActions>();
+    private readonly InputAction m_PajarosVScerdos_Presionado;
+    private readonly InputAction m_PajarosVScerdos_Posicion;
+    private readonly InputAction m_PajarosVScerdos_izquierdo;
+    private readonly InputAction m_PajarosVScerdos_barra;
     /// <summary>
-    /// Provides access to input actions defined in input action map "pajarosycerdos".
+    /// Provides access to input actions defined in input action map "PajarosVScerdos".
     /// </summary>
-    public struct PajarosycerdosActions
+    public struct PajarosVScerdosActions
     {
         private @Controles m_Wrapper;
 
         /// <summary>
         /// Construct a new instance of the input action map wrapper class.
         /// </summary>
-        public PajarosycerdosActions(@Controles wrapper) { m_Wrapper = wrapper; }
+        public PajarosVScerdosActions(@Controles wrapper) { m_Wrapper = wrapper; }
         /// <summary>
-        /// Provides access to the underlying input action "pajarosycerdos/Presionado".
+        /// Provides access to the underlying input action "PajarosVScerdos/Presionado".
         /// </summary>
-        public InputAction @Presionado => m_Wrapper.m_pajarosycerdos_Presionado;
+        public InputAction @Presionado => m_Wrapper.m_PajarosVScerdos_Presionado;
         /// <summary>
-        /// Provides access to the underlying input action "pajarosycerdos/Posicion".
+        /// Provides access to the underlying input action "PajarosVScerdos/Posicion".
         /// </summary>
-        public InputAction @Posicion => m_Wrapper.m_pajarosycerdos_Posicion;
+        public InputAction @Posicion => m_Wrapper.m_PajarosVScerdos_Posicion;
         /// <summary>
-        /// Provides access to the underlying input action "pajarosycerdos/izquierdo".
+        /// Provides access to the underlying input action "PajarosVScerdos/izquierdo".
         /// </summary>
-        public InputAction @izquierdo => m_Wrapper.m_pajarosycerdos_izquierdo;
+        public InputAction @izquierdo => m_Wrapper.m_PajarosVScerdos_izquierdo;
         /// <summary>
-        /// Provides access to the underlying input action "pajarosycerdos/barra".
+        /// Provides access to the underlying input action "PajarosVScerdos/barra".
         /// </summary>
-        public InputAction @barra => m_Wrapper.m_pajarosycerdos_barra;
+        public InputAction @barra => m_Wrapper.m_PajarosVScerdos_barra;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
-        public InputActionMap Get() { return m_Wrapper.m_pajarosycerdos; }
+        public InputActionMap Get() { return m_Wrapper.m_PajarosVScerdos; }
         /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Enable()" />
         public void Enable() { Get().Enable(); }
         /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Disable()" />
@@ -318,9 +318,9 @@ public partial class @Controles: IInputActionCollection2, IDisposable
         /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.enabled" />
         public bool enabled => Get().enabled;
         /// <summary>
-        /// Implicitly converts an <see ref="PajarosycerdosActions" /> to an <see ref="InputActionMap" /> instance.
+        /// Implicitly converts an <see ref="PajarosVScerdosActions" /> to an <see ref="InputActionMap" /> instance.
         /// </summary>
-        public static implicit operator InputActionMap(PajarosycerdosActions set) { return set.Get(); }
+        public static implicit operator InputActionMap(PajarosVScerdosActions set) { return set.Get(); }
         /// <summary>
         /// Adds <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
         /// </summary>
@@ -328,11 +328,11 @@ public partial class @Controles: IInputActionCollection2, IDisposable
         /// <remarks>
         /// If <paramref name="instance" /> is <c>null</c> or <paramref name="instance"/> have already been added this method does nothing.
         /// </remarks>
-        /// <seealso cref="PajarosycerdosActions" />
-        public void AddCallbacks(IPajarosycerdosActions instance)
+        /// <seealso cref="PajarosVScerdosActions" />
+        public void AddCallbacks(IPajarosVScerdosActions instance)
         {
-            if (instance == null || m_Wrapper.m_PajarosycerdosActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_PajarosycerdosActionsCallbackInterfaces.Add(instance);
+            if (instance == null || m_Wrapper.m_PajarosVScerdosActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_PajarosVScerdosActionsCallbackInterfaces.Add(instance);
             @Presionado.started += instance.OnPresionado;
             @Presionado.performed += instance.OnPresionado;
             @Presionado.canceled += instance.OnPresionado;
@@ -353,8 +353,8 @@ public partial class @Controles: IInputActionCollection2, IDisposable
         /// <remarks>
         /// Calling this method when <paramref name="instance" /> have not previously been registered has no side-effects.
         /// </remarks>
-        /// <seealso cref="PajarosycerdosActions" />
-        private void UnregisterCallbacks(IPajarosycerdosActions instance)
+        /// <seealso cref="PajarosVScerdosActions" />
+        private void UnregisterCallbacks(IPajarosVScerdosActions instance)
         {
             @Presionado.started -= instance.OnPresionado;
             @Presionado.performed -= instance.OnPresionado;
@@ -371,12 +371,12 @@ public partial class @Controles: IInputActionCollection2, IDisposable
         }
 
         /// <summary>
-        /// Unregisters <param cref="instance" /> and unregisters all input action callbacks via <see cref="PajarosycerdosActions.UnregisterCallbacks(IPajarosycerdosActions)" />.
+        /// Unregisters <param cref="instance" /> and unregisters all input action callbacks via <see cref="PajarosVScerdosActions.UnregisterCallbacks(IPajarosVScerdosActions)" />.
         /// </summary>
-        /// <seealso cref="PajarosycerdosActions.UnregisterCallbacks(IPajarosycerdosActions)" />
-        public void RemoveCallbacks(IPajarosycerdosActions instance)
+        /// <seealso cref="PajarosVScerdosActions.UnregisterCallbacks(IPajarosVScerdosActions)" />
+        public void RemoveCallbacks(IPajarosVScerdosActions instance)
         {
-            if (m_Wrapper.m_PajarosycerdosActionsCallbackInterfaces.Remove(instance))
+            if (m_Wrapper.m_PajarosVScerdosActionsCallbackInterfaces.Remove(instance))
                 UnregisterCallbacks(instance);
         }
 
@@ -386,27 +386,27 @@ public partial class @Controles: IInputActionCollection2, IDisposable
         /// <remarks>
         /// If <paramref name="instance" /> is <c>null</c>, calling this method will only unregister all existing callbacks but not register any new callbacks.
         /// </remarks>
-        /// <seealso cref="PajarosycerdosActions.AddCallbacks(IPajarosycerdosActions)" />
-        /// <seealso cref="PajarosycerdosActions.RemoveCallbacks(IPajarosycerdosActions)" />
-        /// <seealso cref="PajarosycerdosActions.UnregisterCallbacks(IPajarosycerdosActions)" />
-        public void SetCallbacks(IPajarosycerdosActions instance)
+        /// <seealso cref="PajarosVScerdosActions.AddCallbacks(IPajarosVScerdosActions)" />
+        /// <seealso cref="PajarosVScerdosActions.RemoveCallbacks(IPajarosVScerdosActions)" />
+        /// <seealso cref="PajarosVScerdosActions.UnregisterCallbacks(IPajarosVScerdosActions)" />
+        public void SetCallbacks(IPajarosVScerdosActions instance)
         {
-            foreach (var item in m_Wrapper.m_PajarosycerdosActionsCallbackInterfaces)
+            foreach (var item in m_Wrapper.m_PajarosVScerdosActionsCallbackInterfaces)
                 UnregisterCallbacks(item);
-            m_Wrapper.m_PajarosycerdosActionsCallbackInterfaces.Clear();
+            m_Wrapper.m_PajarosVScerdosActionsCallbackInterfaces.Clear();
             AddCallbacks(instance);
         }
     }
     /// <summary>
-    /// Provides a new <see cref="PajarosycerdosActions" /> instance referencing this action map.
+    /// Provides a new <see cref="PajarosVScerdosActions" /> instance referencing this action map.
     /// </summary>
-    public PajarosycerdosActions @pajarosycerdos => new PajarosycerdosActions(this);
+    public PajarosVScerdosActions @PajarosVScerdos => new PajarosVScerdosActions(this);
     /// <summary>
-    /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "pajarosycerdos" which allows adding and removing callbacks.
+    /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "PajarosVScerdos" which allows adding and removing callbacks.
     /// </summary>
-    /// <seealso cref="PajarosycerdosActions.AddCallbacks(IPajarosycerdosActions)" />
-    /// <seealso cref="PajarosycerdosActions.RemoveCallbacks(IPajarosycerdosActions)" />
-    public interface IPajarosycerdosActions
+    /// <seealso cref="PajarosVScerdosActions.AddCallbacks(IPajarosVScerdosActions)" />
+    /// <seealso cref="PajarosVScerdosActions.RemoveCallbacks(IPajarosVScerdosActions)" />
+    public interface IPajarosVScerdosActions
     {
         /// <summary>
         /// Method invoked when associated input action "Presionado" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.

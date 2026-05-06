@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: 399174eb6e9f4614f89bb6c3f1701815
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -516940570770696794
+    second: Pala_0
+  - first:
+      213: 7705995261795963811
+    second: Pala_1
+  - first:
+      213: 5445612601605907630
+    second: Pala_2
+  - first:
+      213: 505159346781413942
+    second: Pala_3
+  - first:
+      213: 5936852507771839675
+    second: Pala_4
+  - first:
+      213: 8863122759801446647
+    second: Pala_5
+  - first:
+      213: 8825537754126189813
+    second: Pala_6
+  - first:
+      213: 8433318480529862385
+    second: Pala_7
+  - first:
+      213: 124209884380619045
+    second: Pala_8
+  - first:
+      213: 3005613140447656327
+    second: Pala_9
+  - first:
+      213: 3535319853165024024
+    second: Pala_10
+  - first:
+      213: -8287637204142650782
+    second: Pala_11
+  - first:
+      213: 8022760295547119746
+    second: Pala_12
+  - first:
+      213: 2833002138989790595
+    second: Pala_13
+  - first:
+      213: -76511751471455100
+    second: Pala_14
+  - first:
+      213: -6354023229677122113
+    second: Pala_15
+  - first:
+      213: 3321051272668817951
+    second: Pala_16
+  - first:
+      213: -2267691872405006366
+    second: Pala_17
+  - first:
+      213: -1096135910179514339
+    second: Pala_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pala_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2494
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a5993d2a4573d8f0800000000000000
+      internalID: -516940570770696794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pala_1
+      rect:
+        serializedVersion: 2
+        x: 2410
+        y: 2397
+        width: 90
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a3113cccd131fa60800000000000000
+      internalID: 7705995261795963811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pala_2
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 96
+        width: 2463
+        height: 2397
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea46c1f1fc3b29b40800000000000000
+      internalID: 5445612601605907630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pala_3
+      rect:
+        serializedVersion: 2
+        x: 2473
+        y: 1969
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 632efdbdfbfa20700800000000000000
+      internalID: 505159346781413942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pala_4
+      rect:
+        serializedVersion: 2
+        x: 2410
+        y: 1796
+        width: 90
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb4a0a9a6efe36250800000000000000
+      internalID: 5936852507771839675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pala_5
+      rect:
+        serializedVersion: 2
+        x: 2473
+        y: 1368
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f025a2f033200b70800000000000000
+      internalID: 8863122759801446647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pala_6
+      rect:
+        serializedVersion: 2
+        x: 2410
+        y: 1195
+        width: 90
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f48d72e3db9a7a70800000000000000
+      internalID: 8825537754126189813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pala_7
+      rect:
+        serializedVersion: 2
+        x: 2473
+        y: 767
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fe28b5f97a290570800000000000000
+      internalID: 8433318480529862385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pala_8
+      rect:
+        serializedVersion: 2
+        x: 2410
+        y: 594
+        width: 90
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52169145b3849b100800000000000000
+      internalID: 124209884380619045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pala_9
+      rect:
+        serializedVersion: 2
+        x: 2473
+        y: 166
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 789f0a01a3516b920800000000000000
+      internalID: 3005613140447656327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pala_10
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 0
+        width: 96
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 813994fecaaff0130800000000000000
+      internalID: 3535319853165024024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pala_11
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 0
+        width: 35
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26a04c36fd56cfc80800000000000000
+      internalID: -8287637204142650782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pala_12
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 0
+        width: 96
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 288a13e7bf1965f60800000000000000
+      internalID: 8022760295547119746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pala_13
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 0
+        width: 35
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 385886e7f68d05720800000000000000
+      internalID: 2833002138989790595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pala_14
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 0
+        width: 96
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 484a668a7fc20fef0800000000000000
+      internalID: -76511751471455100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pala_15
+      rect:
+        serializedVersion: 2
+        x: 1687
+        y: 0
+        width: 35
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbdc384a989f1d7a0800000000000000
+      internalID: -6354023229677122113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pala_16
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 0
+        width: 96
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1aa84c698eb61e20800000000000000
+      internalID: 3321051272668817951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pala_17
+      rect:
+        serializedVersion: 2
+        x: 2288
+        y: 0
+        width: 35
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e7524db14a8780e0800000000000000
+      internalID: -2267691872405006366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pala_18
+      rect:
+        serializedVersion: 2
+        x: 2410
+        y: 0
+        width: 90
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d185330823eb9c0f0800000000000000
+      internalID: -1096135910179514339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Pala_0: -516940570770696794
+      Pala_1: 7705995261795963811
+      Pala_10: 3535319853165024024
+      Pala_11: -8287637204142650782
+      Pala_12: 8022760295547119746
+      Pala_13: 2833002138989790595
+      Pala_14: -76511751471455100
+      Pala_15: -6354023229677122113
+      Pala_16: 3321051272668817951
+      Pala_17: -2267691872405006366
+      Pala_18: -1096135910179514339
+      Pala_2: 5445612601605907630
+      Pala_3: 505159346781413942
+      Pala_4: 5936852507771839675
+      Pala_5: 8863122759801446647
+      Pala_6: 8825537754126189813
+      Pala_7: 8433318480529862385
+      Pala_8: 124209884380619045
+      Pala_9: 3005613140447656327
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
